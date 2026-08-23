@@ -1,0 +1,1 @@
+.site-footer{border-top:1px solid var(--color-border)}.footer-inner{min-height:6rem;display:grid;grid-template-columns:repeat(3,1fr);align-items:center;color:var(--color-text-muted);font-size:.6rem;text-transform:uppercase;letter-spacing:.15em}.footer-inner div:nth-child(2){text-align:center}.footer-inner div:last-child{text-align:right}
