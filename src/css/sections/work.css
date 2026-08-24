@@ -1,1 +1,162 @@
-.section-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:6rem}.section-header>div{display:flex;align-items:center;gap:1rem}.section-number,.section-label{font-size:.65rem}.section-number{color:var(--color-text-subtle);letter-spacing:.15em}.section-label{text-transform:uppercase;letter-spacing:.2em}.section-header p{max-width:20rem;color:var(--color-text-muted);font-size:.8rem}.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8rem 2rem}.project-large{grid-column:1/-1}.project-visual{position:relative;display:block;overflow:hidden;aspect-ratio:16/10;background:#181818}.project-large .project-visual{aspect-ratio:2/1}.project-one{background:radial-gradient(circle at 65% 35%,#747474 0%,#333 18%,#151515 45%,#090909 75%)}.project-two{background:linear-gradient(135deg,#292929,#080808)}.project-two::after{content:"RYU";position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.04);font-family:var(--font-display);font-size:clamp(5rem,14vw,12rem);font-weight:900;letter-spacing:-.08em}.project-three{background:repeating-linear-gradient(90deg,#111 0,#111 10px,#171717 10px,#171717 11px)}.project-three::after{content:"";position:absolute;top:-20%;left:50%;width:35%;height:140%;transform:rotate(22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.08),transparent)}.project-index{position:absolute;top:1.5rem;left:1.5rem;color:rgba(255,255,255,.5);font-size:.6rem;letter-spacing:.2em}.project-overlay{position:absolute;inset:0;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;padding:1.5rem;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 45%);opacity:0;transition:opacity var(--transition)}.project-overlay span{font-size:.65rem;text-transform:uppercase;letter-spacing:.15em}.project-arrow{font-size:1.4rem!important}.project-visual:hover .project-overlay,.project-visual:hover::before{opacity:1}.project-visual::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 65%);opacity:0;transition:opacity var(--transition),transform var(--transition)}.project-visual:hover::before{transform:scale(1.15)}.project-info{display:flex;justify-content:space-between;padding-top:1.2rem}.project-info h2{font-family:var(--font-display);font-size:1.3rem;font-weight:500;letter-spacing:.02em}.project-info p,.project-info>span{margin-top:.3rem;color:var(--color-text-muted);font-size:.6rem;text-transform:uppercase;letter-spacing:.12em}
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.section-header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section-number,
+.section-label {
+  font-size: 0.65rem;
+}
+.section-number {
+  color: var(--color-text-subtle);
+  letter-spacing: 0.15em;
+}
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.section-header p {
+  max-width: 20rem;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8rem 2rem;
+}
+.project-large {
+  grid-column: 1/-1;
+}
+.project-visual {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  background: #181818;
+}
+.project-large .project-visual {
+  aspect-ratio: 2/1;
+}
+.project-one {
+  background: radial-gradient(
+    circle at 65% 35%,
+    #747474 0%,
+    #333 18%,
+    #151515 45%,
+    #090909 75%
+  );
+}
+.project-two {
+  background: linear-gradient(135deg, #292929, #080808);
+}
+.project-two::after {
+  content: "RYU";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.04);
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 14vw, 12rem);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+}
+.project-three {
+  background: repeating-linear-gradient(
+    90deg,
+    #111 0,
+    #111 10px,
+    #171717 10px,
+    #171717 11px
+  );
+}
+.project-three::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  width: 35%;
+  height: 140%;
+  transform: rotate(22deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+}
+.project-index {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+}
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 45%);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.project-overlay span {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.project-arrow {
+  font-size: 1.4rem !important;
+}
+.project-visual:hover .project-overlay,
+.project-visual:hover::before {
+  opacity: 1;
+}
+.project-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.08),
+    transparent 65%
+  );
+  opacity: 0;
+  transition:
+    opacity var(--transition),
+    transform var(--transition);
+}
+.project-visual:hover::before {
+  transform: scale(1.15);
+}
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.2rem;
+}
+.project-info h2 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.project-info p,
+.project-info > span {
+  margin-top: 0.3rem;
+  color: var(--color-text-muted);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}

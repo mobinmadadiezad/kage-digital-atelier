@@ -1,1 +1,29 @@
-.cursor,.cursor-follower{position:fixed;top:0;left:0;z-index:9999;pointer-events:none;border-radius:50%;transform:translate(-50%,-50%)}.cursor{width:5px;height:5px;background:#fff}.cursor-follower{width:30px;height:30px;border:1px solid rgba(255,255,255,.45);transition:width 250ms var(--ease-out),height 250ms var(--ease-out),background-color 250ms var(--ease-out)}.cursor-follower.hover{width:55px;height:55px;background:rgba(255,255,255,.05)}
+.cursor,
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.cursor {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+}
+.cursor-follower {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  transition:
+    width 250ms var(--ease-out),
+    height 250ms var(--ease-out),
+    background-color 250ms var(--ease-out);
+}
+.cursor-follower.hover {
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.05);
+}
